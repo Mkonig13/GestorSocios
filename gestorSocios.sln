@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34714.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gestorSocios", "gestorSocios\gestorSocios.csproj", "{376D6162-3178-4A01-A696-1D09FB4BDD15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dominio", "dominio\dominio.csproj", "{03CC55F2-1FAA-4C47-931E-CA1BBC52DDB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "datos", "datos\datos.csproj", "{A1D07A6D-9F1D-4FE0-827E-9CBACE21205D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{376D6162-3178-4A01-A696-1D09FB4BDD15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{376D6162-3178-4A01-A696-1D09FB4BDD15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{376D6162-3178-4A01-A696-1D09FB4BDD15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{376D6162-3178-4A01-A696-1D09FB4BDD15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03CC55F2-1FAA-4C47-931E-CA1BBC52DDB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03CC55F2-1FAA-4C47-931E-CA1BBC52DDB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03CC55F2-1FAA-4C47-931E-CA1BBC52DDB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03CC55F2-1FAA-4C47-931E-CA1BBC52DDB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1D07A6D-9F1D-4FE0-827E-9CBACE21205D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1D07A6D-9F1D-4FE0-827E-9CBACE21205D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1D07A6D-9F1D-4FE0-827E-9CBACE21205D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1D07A6D-9F1D-4FE0-827E-9CBACE21205D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {57543A0A-A15B-4BAE-B209-E83B029B1717}
+	EndGlobalSection
+EndGlobal
