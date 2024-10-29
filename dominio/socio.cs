@@ -10,7 +10,6 @@ namespace dominio
     public class socio
     {
         public int id {  get; set; }
-        [DisplayName("Numero")]
         public string nombre { get; set; }
         public string apellido { get; set; }
         public string documento { get; set; }
@@ -20,7 +19,6 @@ namespace dominio
         public string email { get; set; }
 
         public membresia Tipo { get; set; }
-        public membresia Valor { get; set; }
 
 
     }

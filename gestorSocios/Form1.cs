@@ -38,7 +38,7 @@ namespace gestorSocios
             {
                 listaSocio = datos.listar();
                 dgvSocios.DataSource = listaSocio;
-                dgvSocios.Columns["id"].Visible = false;
+                dgvSocios.Columns["Id"].Visible = false;
 
             }
             catch (Exception ex)

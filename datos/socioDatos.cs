@@ -31,19 +31,18 @@ namespace datos
                 while (lector.Read())
                 {
                     socio aux = new socio();
-                    aux.id = (int)lector["Id"];
+                    aux.id = (int)lector["SocioId"];
                     aux.nombre = (string)lector["Nombre"];
                     aux.apellido = (string)lector["Apellido"];
                     aux.documento = (string)lector["Documento"];
-                    aux.fechaNacimiento = (DateTime)lector["Fecha de nacimiento"];
+                    aux.fechaNacimiento = (DateTime)lector["FechaNacimiento"];
                     aux.domicilio = (string)lector["Domicilio"];
-                    aux.telefonoContacto = (string)lector["Contacto"];
+                    aux.telefonoContacto = (string)lector["TelefonoContacto"];
                     aux.email = (string)lector["Email"];
 
-                    membresia aux2 = new membresia();
-                    aux2.Id = (int)lector["IdMembresia"];
-                    aux2.Tipo = (string)lector["Tipo"];
-                    aux2.Valor = (int)lector["Valor"];
+                    aux.Tipo = new membresia();
+                    aux.Tipo.Tipo = (string)lector["TipoMembresia"];
+
 
 
                     lista.Add(aux);
