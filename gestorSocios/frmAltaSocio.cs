@@ -43,6 +43,13 @@ namespace gestorSocios
                 socio.nombre = txtNombre.Text;
                 socio.apellido = txtApellido.Text;
                 socio.documento = txtBDocumento.Text;
+                socio.fechaNacimiento = dtpFechaNacimiento.Value;
+                socio.domicilio = txtBDomicilio.Text;
+                socio.telefonoContacto = txtBTelefono.Text;
+                socio.email = txtBEmail.Text;
+                socio.Tipo = (membresia)cboMembresia.SelectedItem;
+                
+
 
                 if(socio.id != 0)
                 {
@@ -67,13 +74,23 @@ namespace gestorSocios
         }
         private void frmAltaSocio_Load(object sender, EventArgs e)
         {
+            membresiaDatos membresiaDatos = new membresiaDatos();
             try
             {
+                cboMembresia.DataSource = membresiaDatos.listar();
+                cboMembresia.ValueMember = "Id";
+                cboMembresia.DisplayMember = "Tipo";
+
                 if(socio != null)
                 {
                     txtNombre.Text = socio.nombre;
                     txtApellido.Text = socio.apellido;
                     txtBDocumento.Text = socio.documento;
+                    dtpFechaNacimiento.Value = socio.fechaNacimiento;
+                    txtBDomicilio.Text = socio.domicilio;
+                    txtBTelefono.Text = socio.telefonoContacto;
+                    txtBEmail.Text = socio.email;
+                    cboMembresia.SelectedValue = socio.Tipo.Id;
                 }
             }
             catch (Exception ex)

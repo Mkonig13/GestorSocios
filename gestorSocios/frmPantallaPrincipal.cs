@@ -38,5 +38,25 @@ namespace gestorSocios
         {
             openChildForm(new Form1());
         }
+
+        private void btnMembresias_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Form2());
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show(
+                "¿Estás seguro de que deseas cerrar la aplicación?",
+                "Confirmar salida",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
+
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
     }
 }

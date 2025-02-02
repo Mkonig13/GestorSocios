@@ -68,7 +68,7 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(144)))), ((int)(((byte)(226)))));
+            this.btnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnCancelar.Location = new System.Drawing.Point(160, 530);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(84, 27);
@@ -79,7 +79,7 @@
             // 
             // btnAceptar
             // 
-            this.btnAceptar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(144)))), ((int)(((byte)(226)))));
+            this.btnAceptar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnAceptar.Location = new System.Drawing.Point(45, 530);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(84, 27);
@@ -203,6 +203,7 @@
             // 
             // cboMembresia
             // 
+            this.cboMembresia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboMembresia.FormattingEnabled = true;
             this.cboMembresia.Location = new System.Drawing.Point(76, 475);
             this.cboMembresia.Name = "cboMembresia";

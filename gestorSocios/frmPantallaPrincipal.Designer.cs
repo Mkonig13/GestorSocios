@@ -31,7 +31,6 @@
             this.panelFijo = new System.Windows.Forms.Panel();
             this.btnMembresias = new System.Windows.Forms.Button();
             this.btnSocios = new System.Windows.Forms.Button();
-            this.panelLogo = new System.Windows.Forms.Panel();
             this.panelMenuLateral = new System.Windows.Forms.Panel();
             this.btnExit = new System.Windows.Forms.Button();
             this.panelMenuLateral.SuspendLayout();
@@ -54,7 +53,7 @@
             this.btnMembresias.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMembresias.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMembresias.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnMembresias.Location = new System.Drawing.Point(0, 145);
+            this.btnMembresias.Location = new System.Drawing.Point(0, 45);
             this.btnMembresias.Name = "btnMembresias";
             this.btnMembresias.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnMembresias.Size = new System.Drawing.Size(156, 45);
@@ -62,6 +61,7 @@
             this.btnMembresias.Text = "Membresias";
             this.btnMembresias.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMembresias.UseVisualStyleBackColor = true;
+            this.btnMembresias.Click += new System.EventHandler(this.btnMembresias_Click);
             // 
             // btnSocios
             // 
@@ -72,7 +72,7 @@
             this.btnSocios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSocios.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSocios.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnSocios.Location = new System.Drawing.Point(0, 100);
+            this.btnSocios.Location = new System.Drawing.Point(0, 0);
             this.btnSocios.Name = "btnSocios";
             this.btnSocios.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnSocios.Size = new System.Drawing.Size(156, 45);
@@ -82,14 +82,6 @@
             this.btnSocios.UseVisualStyleBackColor = true;
             this.btnSocios.Click += new System.EventHandler(this.btnSocios_Click);
             // 
-            // panelLogo
-            // 
-            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelLogo.Location = new System.Drawing.Point(0, 0);
-            this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(156, 100);
-            this.panelLogo.TabIndex = 0;
-            // 
             // panelMenuLateral
             // 
             this.panelMenuLateral.AutoScroll = true;
@@ -97,7 +89,6 @@
             this.panelMenuLateral.Controls.Add(this.btnExit);
             this.panelMenuLateral.Controls.Add(this.btnMembresias);
             this.panelMenuLateral.Controls.Add(this.btnSocios);
-            this.panelMenuLateral.Controls.Add(this.panelLogo);
             this.panelMenuLateral.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenuLateral.Location = new System.Drawing.Point(0, 0);
             this.panelMenuLateral.Name = "panelMenuLateral";
@@ -121,6 +112,7 @@
             this.btnExit.Text = "Exit";
             this.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // frmPantallaPrincipal
             // 
@@ -142,7 +134,6 @@
         private System.Windows.Forms.Panel panelFijo;
         private System.Windows.Forms.Button btnMembresias;
         private System.Windows.Forms.Button btnSocios;
-        private System.Windows.Forms.Panel panelLogo;
         private System.Windows.Forms.Panel panelMenuLateral;
         private System.Windows.Forms.Button btnExit;
     }

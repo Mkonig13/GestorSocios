@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="accesoDatos.cs" />
+    <Compile Include="loginDatos.cs" />
     <Compile Include="membresiaDatos.cs" />
     <Compile Include="socioDatos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

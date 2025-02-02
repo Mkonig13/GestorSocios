@@ -16,7 +16,7 @@ namespace gestorSocios
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmPantallaPrincipal());
+            Application.Run(new Login());
         }
     }
 }

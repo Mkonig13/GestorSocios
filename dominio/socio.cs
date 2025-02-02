@@ -17,6 +17,7 @@ namespace dominio
         public string domicilio { get; set; }  
         public string telefonoContacto { get; set; }
         public string email { get; set; }
+        public string estado { get; set; }  
 
         public membresia Tipo { get; set; }
 
