@@ -50,7 +50,7 @@
             this.dgvMembresia.MultiSelect = false;
             this.dgvMembresia.Name = "dgvMembresia";
             this.dgvMembresia.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvMembresia.Size = new System.Drawing.Size(807, 561);
+            this.dgvMembresia.Size = new System.Drawing.Size(827, 561);
             this.dgvMembresia.TabIndex = 1;
             // 
             // panelOptions
@@ -60,9 +60,9 @@
             this.panelOptions.Controls.Add(this.btnModificarMembresia);
             this.panelOptions.Controls.Add(this.btnAgregarMembresia);
             this.panelOptions.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelOptions.Location = new System.Drawing.Point(807, 0);
+            this.panelOptions.Location = new System.Drawing.Point(824, 0);
             this.panelOptions.Name = "panelOptions";
-            this.panelOptions.Size = new System.Drawing.Size(127, 561);
+            this.panelOptions.Size = new System.Drawing.Size(110, 561);
             this.panelOptions.TabIndex = 5;
             // 
             // btnEliminarFisicoMembresia
@@ -77,7 +77,7 @@
             this.btnEliminarFisicoMembresia.Location = new System.Drawing.Point(0, 90);
             this.btnEliminarFisicoMembresia.Name = "btnEliminarFisicoMembresia";
             this.btnEliminarFisicoMembresia.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnEliminarFisicoMembresia.Size = new System.Drawing.Size(127, 45);
+            this.btnEliminarFisicoMembresia.Size = new System.Drawing.Size(110, 45);
             this.btnEliminarFisicoMembresia.TabIndex = 3;
             this.btnEliminarFisicoMembresia.Text = "Eliminar";
             this.btnEliminarFisicoMembresia.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -95,7 +95,7 @@
             this.btnModificarMembresia.Location = new System.Drawing.Point(0, 45);
             this.btnModificarMembresia.Name = "btnModificarMembresia";
             this.btnModificarMembresia.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnModificarMembresia.Size = new System.Drawing.Size(127, 45);
+            this.btnModificarMembresia.Size = new System.Drawing.Size(110, 45);
             this.btnModificarMembresia.TabIndex = 2;
             this.btnModificarMembresia.Text = "Modificar";
             this.btnModificarMembresia.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -113,7 +113,7 @@
             this.btnAgregarMembresia.Location = new System.Drawing.Point(0, 0);
             this.btnAgregarMembresia.Name = "btnAgregarMembresia";
             this.btnAgregarMembresia.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnAgregarMembresia.Size = new System.Drawing.Size(127, 45);
+            this.btnAgregarMembresia.Size = new System.Drawing.Size(110, 45);
             this.btnAgregarMembresia.TabIndex = 1;
             this.btnAgregarMembresia.Text = "Agregar ";
             this.btnAgregarMembresia.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -127,7 +127,7 @@
             this.Controls.Add(this.panelOptions);
             this.Controls.Add(this.dgvMembresia);
             this.Name = "Form2";
-            this.Text = "Form2";
+            this.Text = "Membresias";
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMembresia)).EndInit();
             this.panelOptions.ResumeLayout(false);

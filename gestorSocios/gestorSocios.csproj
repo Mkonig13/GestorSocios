@@ -70,6 +70,12 @@
     <Compile Include="frmPantallaPrincipal.Designer.cs">
       <DependentUpon>frmPantallaPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmRecuperarContraseña.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRecuperarContraseña.Designer.cs">
+      <DependentUpon>frmRecuperarContraseña.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +96,9 @@
     <EmbeddedResource Include="frmPantallaPrincipal.resx">
       <DependentUpon>frmPantallaPrincipal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmRecuperarContraseña.resx">
+      <DependentUpon>frmRecuperarContraseña.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -101,6 +110,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -124,6 +134,9 @@
       <Project>{03cc55f2-1faa-4c47-931e-ca1bbc52ddb3}</Project>
       <Name>dominio</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KNG.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

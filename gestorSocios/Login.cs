@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using datos;
+using System.Diagnostics.Eventing.Reader;
 
 namespace gestorSocios
 {
@@ -87,12 +88,41 @@ namespace gestorSocios
         {
             if(txtbUsuario.Text != "USUARIO")
             {
-
+                if (txtbContrasena.Text != "CONTRASEÑA")
+                {
+                    loginDatos user = new loginDatos();
+                    var validLogin = user.login(txtbUsuario.Text, txtbContrasena.Text);
+                    if(validLogin == true)
+                    {
+                        frmPantallaPrincipal mainMenu = new frmPantallaPrincipal();
+                        mainMenu.Show();
+                        this.Hide();
+                    }
+                    else
+                    {
+                        msgError("Usuario o contraseña incorrecto. \n Intentelo denuevo");
+                        txtbContrasena.Clear();
+                        txtbUsuario.Focus();
+                    }
+                }
+                else msgError("Por favor ingrese su contraseña");
             }
             else
             {
-
+                msgError("Por favor ingrese su nombre de usuario");
             }
+        }
+        private void msgError(string msg) 
+        {
+            lblErrorMessage.Text = msg;
+            lblErrorMessage.Visible = true;
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            var recoverPassword = new frmRecuperarContraseña();
+            recoverPassword.ShowDialog();
+
         }
     }
 }

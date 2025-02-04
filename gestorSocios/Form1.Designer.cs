@@ -50,14 +50,14 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvSocios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvSocios.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(234)))), ((int)(((byte)(238)))));
+            this.dgvSocios.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.dgvSocios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvSocios.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dgvSocios.Location = new System.Drawing.Point(0, 45);
             this.dgvSocios.MultiSelect = false;
             this.dgvSocios.Name = "dgvSocios";
             this.dgvSocios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvSocios.Size = new System.Drawing.Size(807, 516);
+            this.dgvSocios.Size = new System.Drawing.Size(824, 516);
             this.dgvSocios.TabIndex = 0;
             // 
             // btnAgregar
@@ -72,7 +72,7 @@
             this.btnAgregar.Location = new System.Drawing.Point(0, 0);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnAgregar.Size = new System.Drawing.Size(127, 45);
+            this.btnAgregar.Size = new System.Drawing.Size(110, 45);
             this.btnAgregar.TabIndex = 1;
             this.btnAgregar.Text = "Agregar ";
             this.btnAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -91,7 +91,7 @@
             this.btnModificar.Location = new System.Drawing.Point(0, 45);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnModificar.Size = new System.Drawing.Size(127, 45);
+            this.btnModificar.Size = new System.Drawing.Size(110, 45);
             this.btnModificar.TabIndex = 2;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -106,9 +106,9 @@
             this.panelOptions.Controls.Add(this.btnModificar);
             this.panelOptions.Controls.Add(this.btnAgregar);
             this.panelOptions.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelOptions.Location = new System.Drawing.Point(807, 0);
+            this.panelOptions.Location = new System.Drawing.Point(824, 0);
             this.panelOptions.Name = "panelOptions";
-            this.panelOptions.Size = new System.Drawing.Size(127, 561);
+            this.panelOptions.Size = new System.Drawing.Size(110, 561);
             this.panelOptions.TabIndex = 4;
             // 
             // btnEstado
@@ -123,7 +123,7 @@
             this.btnEstado.Location = new System.Drawing.Point(0, 135);
             this.btnEstado.Name = "btnEstado";
             this.btnEstado.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnEstado.Size = new System.Drawing.Size(127, 45);
+            this.btnEstado.Size = new System.Drawing.Size(110, 45);
             this.btnEstado.TabIndex = 4;
             this.btnEstado.Text = "Estado";
             this.btnEstado.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -142,7 +142,7 @@
             this.btnEliminarFisico.Location = new System.Drawing.Point(0, 90);
             this.btnEliminarFisico.Name = "btnEliminarFisico";
             this.btnEliminarFisico.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnEliminarFisico.Size = new System.Drawing.Size(127, 45);
+            this.btnEliminarFisico.Size = new System.Drawing.Size(110, 45);
             this.btnEliminarFisico.TabIndex = 3;
             this.btnEliminarFisico.Text = "Eliminar";
             this.btnEliminarFisico.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -151,6 +151,7 @@
             // 
             // panelFijo
             // 
+            this.panelFijo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.panelFijo.Controls.Add(this.cbCampo);
             this.panelFijo.Controls.Add(this.label2);
             this.panelFijo.Controls.Add(this.txtBuscar);
@@ -159,7 +160,7 @@
             this.panelFijo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelFijo.Location = new System.Drawing.Point(0, 0);
             this.panelFijo.Name = "panelFijo";
-            this.panelFijo.Size = new System.Drawing.Size(807, 561);
+            this.panelFijo.Size = new System.Drawing.Size(824, 561);
             this.panelFijo.TabIndex = 5;
             // 
             // cbCampo

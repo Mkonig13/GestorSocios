@@ -32,8 +32,10 @@
             this.btnMembresias = new System.Windows.Forms.Button();
             this.btnSocios = new System.Windows.Forms.Button();
             this.panelMenuLateral = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnExit = new System.Windows.Forms.Button();
             this.panelMenuLateral.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelFijo
@@ -46,14 +48,13 @@
             // 
             // btnMembresias
             // 
-            this.btnMembresias.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnMembresias.FlatAppearance.BorderSize = 0;
             this.btnMembresias.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
             this.btnMembresias.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray;
             this.btnMembresias.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMembresias.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMembresias.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnMembresias.Location = new System.Drawing.Point(0, 45);
+            this.btnMembresias.ForeColor = System.Drawing.Color.Black;
+            this.btnMembresias.Location = new System.Drawing.Point(0, 202);
             this.btnMembresias.Name = "btnMembresias";
             this.btnMembresias.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnMembresias.Size = new System.Drawing.Size(156, 45);
@@ -65,14 +66,13 @@
             // 
             // btnSocios
             // 
-            this.btnSocios.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnSocios.FlatAppearance.BorderSize = 0;
             this.btnSocios.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
             this.btnSocios.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray;
             this.btnSocios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSocios.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSocios.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnSocios.Location = new System.Drawing.Point(0, 0);
+            this.btnSocios.ForeColor = System.Drawing.Color.Black;
+            this.btnSocios.Location = new System.Drawing.Point(0, 158);
             this.btnSocios.Name = "btnSocios";
             this.btnSocios.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnSocios.Size = new System.Drawing.Size(156, 45);
@@ -85,7 +85,8 @@
             // panelMenuLateral
             // 
             this.panelMenuLateral.AutoScroll = true;
-            this.panelMenuLateral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.panelMenuLateral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.panelMenuLateral.Controls.Add(this.pictureBox1);
             this.panelMenuLateral.Controls.Add(this.btnExit);
             this.panelMenuLateral.Controls.Add(this.btnMembresias);
             this.panelMenuLateral.Controls.Add(this.btnSocios);
@@ -95,6 +96,17 @@
             this.panelMenuLateral.Size = new System.Drawing.Size(156, 622);
             this.panelMenuLateral.TabIndex = 6;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBox1.Image = global::gestorSocios.Properties.Resources.KNG;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(156, 157);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            // 
             // btnExit
             // 
             this.btnExit.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -103,7 +115,7 @@
             this.btnExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray;
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExit.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnExit.ForeColor = System.Drawing.Color.Black;
             this.btnExit.Location = new System.Drawing.Point(0, 577);
             this.btnExit.Name = "btnExit";
             this.btnExit.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
@@ -123,8 +135,9 @@
             this.Controls.Add(this.panelMenuLateral);
             this.MinimumSize = new System.Drawing.Size(1143, 661);
             this.Name = "frmPantallaPrincipal";
-            this.Text = "frmPantallaPrincipal";
+            this.Text = "Menu Principal";
             this.panelMenuLateral.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -136,5 +149,6 @@
         private System.Windows.Forms.Button btnSocios;
         private System.Windows.Forms.Panel panelMenuLateral;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

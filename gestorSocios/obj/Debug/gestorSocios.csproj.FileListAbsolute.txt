@@ -34,3 +34,4 @@ C:\Users\matik\OneDrive\Documentos\Repositorios\gestorSocios\gestorSocios\obj\De
 C:\Users\matik\OneDrive\Documentos\Repositorios\gestorSocios\gestorSocios\obj\Debug\gestorSocios.pdb
 C:\Users\matik\OneDrive\Documentos\Repositorios\gestorSocios\gestorSocios\obj\Debug\gestorSocios.Form2.resources
 C:\Users\matik\OneDrive\Documentos\Repositorios\gestorSocios\gestorSocios\obj\Debug\gestorSocios.Login.resources
+C:\Users\matik\OneDrive\Documentos\Repositorios\gestorSocios\gestorSocios\obj\Debug\gestorSocios.frmRecuperarContraseña.resources
