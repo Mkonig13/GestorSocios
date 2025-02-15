@@ -32,6 +32,7 @@
             this.btnMembresias = new System.Windows.Forms.Button();
             this.btnSocios = new System.Windows.Forms.Button();
             this.panelMenuLateral = new System.Windows.Forms.Panel();
+            this.btnConfiguracion = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnExit = new System.Windows.Forms.Button();
             this.panelMenuLateral.SuspendLayout();
@@ -40,6 +41,7 @@
             // 
             // panelFijo
             // 
+            this.panelFijo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(234)))), ((int)(((byte)(238)))));
             this.panelFijo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelFijo.Location = new System.Drawing.Point(156, 0);
             this.panelFijo.Name = "panelFijo";
@@ -54,7 +56,7 @@
             this.btnMembresias.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMembresias.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMembresias.ForeColor = System.Drawing.Color.Black;
-            this.btnMembresias.Location = new System.Drawing.Point(0, 202);
+            this.btnMembresias.Location = new System.Drawing.Point(0, 203);
             this.btnMembresias.Name = "btnMembresias";
             this.btnMembresias.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnMembresias.Size = new System.Drawing.Size(156, 45);
@@ -86,6 +88,7 @@
             // 
             this.panelMenuLateral.AutoScroll = true;
             this.panelMenuLateral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.panelMenuLateral.Controls.Add(this.btnConfiguracion);
             this.panelMenuLateral.Controls.Add(this.pictureBox1);
             this.panelMenuLateral.Controls.Add(this.btnExit);
             this.panelMenuLateral.Controls.Add(this.btnMembresias);
@@ -95,6 +98,24 @@
             this.panelMenuLateral.Name = "panelMenuLateral";
             this.panelMenuLateral.Size = new System.Drawing.Size(156, 622);
             this.panelMenuLateral.TabIndex = 6;
+            // 
+            // btnConfiguracion
+            // 
+            this.btnConfiguracion.FlatAppearance.BorderSize = 0;
+            this.btnConfiguracion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
+            this.btnConfiguracion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray;
+            this.btnConfiguracion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConfiguracion.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConfiguracion.ForeColor = System.Drawing.Color.Black;
+            this.btnConfiguracion.Location = new System.Drawing.Point(0, 248);
+            this.btnConfiguracion.Name = "btnConfiguracion";
+            this.btnConfiguracion.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnConfiguracion.Size = new System.Drawing.Size(156, 45);
+            this.btnConfiguracion.TabIndex = 5;
+            this.btnConfiguracion.Text = "Configuracion";
+            this.btnConfiguracion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnConfiguracion.UseVisualStyleBackColor = true;
+            this.btnConfiguracion.Click += new System.EventHandler(this.btnConfiguracion_Click);
             // 
             // pictureBox1
             // 
@@ -135,7 +156,7 @@
             this.Controls.Add(this.panelMenuLateral);
             this.MinimumSize = new System.Drawing.Size(1143, 661);
             this.Name = "frmPantallaPrincipal";
-            this.Text = "Menu Principal";
+            this.Text = " ";
             this.panelMenuLateral.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -150,5 +171,6 @@
         private System.Windows.Forms.Panel panelMenuLateral;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnConfiguracion;
     }
 }

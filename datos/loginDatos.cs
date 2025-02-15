@@ -8,6 +8,7 @@ using System.Data.SqlClient;
 using datos.mailServices;
 
 
+
 namespace datos
 {
     public class loginDatos
@@ -34,6 +35,16 @@ namespace datos
 
                 if (lector.HasRows)
                 {
+                    while (lector.Read())
+                    {
+                        UserCache.Id = lector.GetInt32(0);
+                        UserCache.LoginName = lector.GetString(1);
+                        UserCache.Password = lector.GetString(2);
+                        UserCache.FirstName = lector.GetString(3);
+                        UserCache.LastName = lector.GetString(4);
+                        UserCache.Email = lector.GetString(5);
+                    }
+
                     return true;    
                 }else
                     return false;
@@ -43,6 +54,10 @@ namespace datos
             catch (Exception ex)
             {
                 throw ex;  
+            }
+            finally
+            {
+                conexion.Close();
             }
         }
 
@@ -93,8 +108,56 @@ namespace datos
 
                 throw ex;
             }
+            finally
+            {
+                conexion.Close();
+            }
         }
 
+        public string editProfile(int id, string userName, string password, string name, string lastName,string mail)
+        {
+            SqlConnection conexion = new SqlConnection();
+            SqlCommand comando = new SqlCommand();
+            SqlDataReader lector;
+
+            try
+            {
+                conexion.ConnectionString = "server=.\\SQLEXPRESS; database=gestorSocios; integrated security=true";
+                comando.CommandType = System.Data.CommandType.Text;
+                comando.CommandText = "update users set LoginName = @userName, Password = @pass, FirstName = @name, LastName = @lastName, Email = @mail where Id = @id";
+                comando.Parameters.AddWithValue("@userName", userName);
+                comando.Parameters.AddWithValue("@pass",password);
+                comando.Parameters.AddWithValue("@name", name);
+                comando.Parameters.AddWithValue("@lastName", lastName);
+                comando.Parameters.AddWithValue("@mail", mail);
+                comando.Parameters.AddWithValue("@id", id);
+                comando.Connection = conexion;
+
+                conexion.Open();
+                lector = comando.ExecuteReader();
+
+                
+                try
+                {
+                    login(userName, password);
+                    return "Datos actualizados correctamente";
+                }
+                catch (Exception)
+                {
+
+                    return "El nombre de usuario ya esta siendo utilizado, por favor elija otro";
+                }
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                conexion.Close();
+            }
+        }
 
 
     }

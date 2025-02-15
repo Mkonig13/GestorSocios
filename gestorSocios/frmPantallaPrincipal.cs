@@ -58,5 +58,10 @@ namespace gestorSocios
                 Application.Exit();
             }
         }
+
+        private void btnConfiguracion_Click(object sender, EventArgs e)
+        {
+            openChildForm(new frmConfiguracion());
+        }
     }
 }
