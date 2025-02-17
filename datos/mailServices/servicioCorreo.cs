@@ -33,7 +33,7 @@ namespace datos.mailServices
             {
 
                 var fromAddress = new MailAddress("matikonig13@gmail.com", "Matias");
-                const string fromPassword = "Matifeli123";
+                const string fromPassword = "";
                 string smtpHost = "smtp.gmail.com";
                 int smtpPort = 587;
 
