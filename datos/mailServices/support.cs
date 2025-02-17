@@ -13,7 +13,7 @@ namespace datos.mailServices
         public support() {
 
             senderMail = "matikonig13@hotmail.com";
-            password = "Matifeli2001";
+            password = "";
             host = "smtp.live.com";
             port = 587;
             ssl = true;
